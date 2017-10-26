@@ -15,7 +15,7 @@ var letters = function(word) {
 };
 
 var consonantShift = function(_userLetters) {
-  var i = 0;
+  var i = 1;
   if (letterY.test(_userLetters[0])) {
     _userLetters.push(_userLetters.shift());
   };
@@ -59,7 +59,6 @@ var iglatinPay = function(userSentence) {
   });
   return pigLatinSentence.join(" ");
 };
-
 
 $(function(){
   $("#pig-latin").submit(function(event){
